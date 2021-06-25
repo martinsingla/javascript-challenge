@@ -32,12 +32,12 @@
             <div class="panel panel-default">
               <div class="panel-heading">Filter Search</div>
               <div class="panel-body">
-                <form>
+                <form id="form">
                   <div class="form-group">
                     <ul class="list-group" id="filters">
                       <li class="filter list-group-item">
                         <label for="date">Enter a Date</label>
-                        <input class="form-control" id="datetime" type="text" placeholder="1/11/2011">
+                        <input class="form-control" id="datetime" type="text" placeholder="d/m/yyyy">
                       </li>
                     </ul>
                   </div>
@@ -61,7 +61,7 @@
                   <th class="table-head">Comments</th>
                 </tr>
               </thead>
-              <tbody></tbody>
+              <tbody id= 'TableBody'></tbody>
             </table>
           </div>
         </div>
@@ -71,6 +71,7 @@
       <span class="bottom">UFO Sightings</span>
     </footer>
   </div>
+
   <script src="https://d3js.org/d3.v5.min.js"></script>
   <script src="static/js/data.js"></script>
   <script src="static/js/app.js"></script>
